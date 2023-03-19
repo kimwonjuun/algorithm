@@ -1,3 +1,3 @@
 function solution(array, height) {
-    return array.filter(v=> v>height).length ?? 0
+    return array.filter(v=> v>height).length
 }
