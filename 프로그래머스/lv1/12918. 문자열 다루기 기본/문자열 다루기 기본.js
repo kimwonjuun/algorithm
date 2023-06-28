@@ -1,4 +1,7 @@
 function solution(s) {
-    const regex = /^[0-9]+$/;
-    return (s.length === 4 || s.length === 6) && regex.test(s);
+    if(s.length != 4 && s.length != 6) return false;
+    for(var i = 0; i < s.length; i++) {
+        if(isNaN(Number(s[i]))) return false;
+    }
+    return true;
 }
