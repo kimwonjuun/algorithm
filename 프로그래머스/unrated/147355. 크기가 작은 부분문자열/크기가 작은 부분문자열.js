@@ -8,7 +8,7 @@ function solution(t, p) {
         const substring = t.slice(i, i + p.length);
         const substringNum = Number(substring);
         
-        if (substringNum <= pNum) {
+        if (pNum >= substringNum) { 
             count++;
         }
     }
