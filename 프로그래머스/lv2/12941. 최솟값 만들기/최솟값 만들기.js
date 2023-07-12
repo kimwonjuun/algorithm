@@ -3,3 +3,4 @@ function solution(A, B) {
     B.sort((a, b) => b - a);
     return A.reduce((acc, cur, idx) => acc + cur * B[idx], 0);
 }
+
